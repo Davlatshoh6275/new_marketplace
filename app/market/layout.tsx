@@ -1,4 +1,5 @@
-import PagesList from "@/Components/PagesList";
+import Footer from "@/Components/client/Footer";
+import PagesList from "@/Components/client/PagesList";
 import { Separator } from "@/Components/ui/separator";
 
 export default async function RootLayout({
@@ -11,10 +12,10 @@ export default async function RootLayout({
       <nav>
         <PagesList />
       </nav>
-      <Separator  />
+      <Separator />
       <main>{children}</main>
       <footer>
-        
+        <Footer />
       </footer>
     </>
   );
