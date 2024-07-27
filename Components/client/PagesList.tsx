@@ -8,7 +8,7 @@ import { Input } from "../ui/input";
 
 export default function PagesList() {
   return (
-    <div className="flex max-w-[1440px] my-0 mx-auto  justify-between items-center h-16" >
+    <div className="flex max-w-[1440px] my-0 mx-auto xl:w-[1200px]  justify-between items-center h-16" >
       <div>
         <h1 className="text-2xl font-bold cursor-pointer " >Exclusive</h1>
       </div>
@@ -17,7 +17,7 @@ export default function PagesList() {
           <Li title="Home" url="/market/home" />
           <Li title="Contact" url="/market/contact" />
           <Li title="About" url="/market/about" />
-          <Li title="Sign Up" url="/market/signout" />
+          <Li title="Sign Up" url="/market/signup" />
         </ul>
       </div>
       <div className="flex items-center gap-3 " >
@@ -26,7 +26,9 @@ export default function PagesList() {
           <CiSearch className="absolute top-2 right-3 text-2xl"  />
         </div>
         <div>
+          <Link href={"/market/liked"} >
           <CiHeart className="text-3xl cursor-pointer" />
+          </Link>
         </div>
         <div>
           <IoCartOutline className="text-3xl cursor-pointer" />

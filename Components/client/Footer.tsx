@@ -4,7 +4,7 @@ import { Input } from "../ui/input";
 export default function Footer() {
   return (
     <div className=" w-full h-full py-12 bg-black">
-      <div className="flex justify-between items-start max-w-[1440px] my-0 mx-auto ">
+      <div className="flex justify-between items-start max-w-[1440px] my-0 mx-auto xl:w-[1200px] ">
         <div>
           <h1 className="font-semibold text-2xl text-white mb-5 " >Exclusive</h1>
           <h3 className="font-medium text-white text-xl mb-3" >Subscribe</h3>
