@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function SignUp() {
   return (
-    <div className="flex justify-between h-full items-center xl:pr-[8%]">
+    <div className="flex justify-between h-full max-w-[1440px] my-0 mx-auto xl:w-[1200px] items-center xl:pr-[8%]">
       <div>
         <Image
           src={img}
@@ -27,14 +27,30 @@ export default function SignUp() {
             <Input type="password" placeholder="Password" className="mb-3" />
 
             <div className="flex flex-col gap-3">
-              <button type="submit" className="w-full border h-10 rounded-sm bg-[#DB4444] text-white " >Create Account</button>
-              <button type="submit" className="flex justify-center items-center w-full h-10 border gap-3" >
+              <button
+                type="submit"
+                className="w-full border h-10 rounded-sm bg-[#DB4444] text-white "
+              >
+                Create Account
+              </button>
+              <button
+                type="submit"
+                className="flex justify-center items-center w-full h-10 border gap-3"
+              >
                 <FcGoogle className="text-2xl" /> Sign up with Google
               </button>
             </div>
           </form>
-          <p className="text-center  " >Already have account? <Link href={"/market/logIn"} className="
-        border-b-2 border-[#CFCFCF] pb-[2px] text-[#868686] " >Log in</Link></p>
+          <p className="text-center  ">
+            Already have account?{" "}
+            <Link
+              href={"/market/logIn"}
+              className="
+        border-b-2 border-[#CFCFCF] pb-[2px] text-[#868686] "
+            >
+              Log in
+            </Link>
+          </p>
         </div>
       </div>
     </div>
