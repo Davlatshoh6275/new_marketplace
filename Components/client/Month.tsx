@@ -4,7 +4,7 @@ import Image from "next/image";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { TiShoppingCart } from "react-icons/ti";
 import img from "../../public/images/gamepad.png";
-import Start from "./Start";
+import Start from "./Stars";
 
 export default function Month() {
   return (

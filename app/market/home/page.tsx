@@ -1,3 +1,4 @@
+import Banner from "@/Components/client/Banner";
 import Categories from "@/Components/client/Categories";
 import Header from "@/Components/client/Header";
 import Month from "@/Components/client/Month";
@@ -12,7 +13,8 @@ export default function home() {
       {/* <Todays /> */}
       <Categories />
       <Separator className="mb-5" />
-      <Month/>
+      <Month />
+      <Banner />
     </div>
   );
 }
